@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
-import { FaFacebookF } from "react-icons/fa";
 import SocialItem from "./SocialItem";
 
 const Header = () => {
@@ -52,21 +51,17 @@ const Header = () => {
             <div className="fixed inset-0 hidden flex-col justify-center items-center bg-black z-40">
               <ul className="flex flex-col gap-4 text-white text-lg">
                 <li>
-                  <a href="/">About Us</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <a href="/">Services</a>
+                  <Link href="/">About</Link>
                 </li>
                 <li>
-                  <a href="/">Use Cases</a>
+                  <Link href="/">Gallery</Link>
                 </li>
                 <li>
-                  <a href="/">Pricing</a>
+                  <Link href="/">Contact</Link>
                 </li>
-                <li>
-                  <a href="/">Blog</a>
-                </li>
-                <li>Button</li>
               </ul>
               <div className="flex text-black gap-4 mt-4">
                 <SocialItem />
